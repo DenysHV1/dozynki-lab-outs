@@ -6,23 +6,32 @@ const mobileMenu = () => {
   );
   const mobileMenuItems = document.querySelectorAll('.header-nav-mobile-item');
   const header = document.querySelector('.header');
+
+
+  const openSvg = document.querySelector('.header-nav-mobile-button-open');
+  const closeSvg = document.querySelector('.header-nav-mobile-button-close');
+
   mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.add('is-open');
+    if (mobileMenu.classList.contains('is-open')) {
+      mobileMenu.classList.remove('is-open');
+      openSvg.classList.remove('is-hidden');
+      closeSvg.classList.add('is-hidden');
+    } else {
+      mobileMenu.classList.add('is-open');
+      openSvg.classList.add('is-hidden');
+      closeSvg.classList.remove('is-hidden');
+    }
   });
 
-  mobileMenuButtonClose.addEventListener('click', () => {
-    mobileMenu.classList.remove('is-open');
-  });
 
   mobileMenuItems.forEach(item => {
     item.addEventListener('click', () => {
       mobileMenu.classList.remove('is-open');
+      openSvg.classList.remove('is-hidden');
+      closeSvg.classList.add('is-hidden');
     });
   });
 
-  window.addEventListener('scroll', () => {
-    header.classList.toggle('scroll', window.scrollY > 0);
-  });
 };
 
 export default mobileMenu;
