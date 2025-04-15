@@ -1,0 +1,79 @@
+@import './reset.css';
+
+@import './header.css';
+@import './footer.css';
+@import './pages.css';
+
+@import './history.css';
+@import './line.css';
+@import './lab.css';
+@import './gallery.css';
+@import './hero.css';
+@import './contacts.css';
+
+@import './cookies.css';
+
+:root {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #451403;
+
+  background-color: #5b2d90;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  max-width: 375px;
+  min-width: 320px;
+  margin: 0 auto;
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+  }
+}
+
+.title-h2 {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.3;
+  text-align: center;
+  color: #451403;
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+  }
+}
+
+.button_base {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #b83a16;
+  border-radius: 12px;
+  background: #ed6722;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #fcf6f4;
+  font-family: 'Playfair Display', sans-serif;
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,0 +1,12 @@
+.footer {
+  padding: 15.5px 20px;
+  background-color: #f8d909;
+  @media screen and (min-width: 1440px) {
+    padding: 46px 80px;
+  }
+}
+
+.footer_container{
+  padding: 0 20px;
+}
+
