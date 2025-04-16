@@ -50,3 +50,13 @@ img {
   display: block;
   max-width: 100%;
 }
+
+input {
+  border: none;
+  outline: none;
+}
+
+textarea {
+  border: none;
+  outline: none;
+}

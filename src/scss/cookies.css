@@ -5,33 +5,49 @@
   transform: translate(-50%);
   z-index: 999;
   width: 100%;
-  background: #ffd700;
+  background: #feeec7;
+  border-radius: 24px;
 }
 
 .cookies-container {
-  padding: 16px 38px 16px 50px;
+  padding: 16px 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   @media screen and (min-width: 1440px) {
-    padding: 20px 34px;
-    flex-direction: row;
+    padding: 20px 30px;
     justify-content: space-between;
   }
 }
 
-.cookies-text {
-  width: 100%;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-  color: #5b2d90;
-  font-family: 'Poppins', sans-serif;
+.cookies-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 194px;
   @media screen and (min-width: 1440px) {
-    font-family: 'Roboto', sans-serif;
-    width: 595px;
+    max-width: 535px;
+  }
+}
+
+.cookies-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
+}
+
+.cookies-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #436977;
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
   }
 }
 
@@ -40,22 +56,28 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
   @media screen and (min-width: 1440px) {
     flex-direction: row;
-    gap: 26px;
   }
 }
 
 .cookies-button {
   width: 295px;
   height: 78px;
-  border-radius: 40px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: opacity 300ms ease;
+  width: 133px;
+  height: 44px;
+  @media screen and (min-width: 1440px) {
+    border-radius: 14px;
+    width: 182px;
+    height: 51px;
+  }
 }
 
 .cookies-button:hover {
@@ -63,19 +85,25 @@
 }
 
 .cookies-accept-js {
-  background-color: #5b2d90;
-  font-weight: 700;
-  font-size: 20px;
+  background-color: #ed6722;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 1.5;
-  color: #ffd700;
-  font-family: 'Roboto', sans-serif;
+  color: #f5f0e6;
+  font-family: "Poppins", sans-serif;
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
 }
 
 .cookies-decline-js {
-  border: 1px solid #5b2d90;
+  border: 1px solid #ed6722;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.5;
-  color: #5b2d90;
-  font-family: 'Chewy', sans-serif;
+  color: #451403;
+  font-family: "Poppins", sans-serif;
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
 }
