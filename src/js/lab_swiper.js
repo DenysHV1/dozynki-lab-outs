@@ -1,13 +1,13 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-export const lineSwiper = () => {
-	let lineSwiper = null;
+export const labSwiper = () => {
+	let labSwiper = null;
 
-	const initLineSwiper = () => {
+	const initLabSwiper = () => {
 		if (window.innerWidth < 1440) {
-			if (!lineSwiper) {
-				lineSwiper = new Swiper(".swiper-line", {
+			if (!labSwiper) {
+				labSwiper = new Swiper(".swiper-lab", {
 					slidesPerView: 1,
 					slidesPerGroup: 1,
 					centeredSlides: true,
@@ -25,22 +25,19 @@ export const lineSwiper = () => {
 						onlyInViewport: true,
 					},
 					pagination: {
-						el: ".swiper-pagination-line",
+						el: ".swiper-pagination-lab",
 						clickable: true,
 					},
 				});
 			}
 		} else {
-			if (lineSwiper) {
-				lineSwiper.destroy(true, true);
-				lineSwiper = null;
+			if (labSwiper) {
+				labSwiper.destroy(true, true);
+				labSwiper = null;
 			}
 		}
 	};
 
-	initLineSwiper();
-	window.addEventListener("resize", initLineSwiper);
+	initLabSwiper();
+	window.addEventListener("resize", initLabSwiper);
 };
-
-
-

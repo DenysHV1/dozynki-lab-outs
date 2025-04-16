@@ -1,8 +1,9 @@
 .lab {
   margin-bottom: 80px;
   scroll-margin-top: 100px;
-  @media screen and (min-width: 1440px) {
-    margin-bottom: 140px;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 120px;
   }
 }
 
@@ -10,9 +11,105 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 28px;
-  @media screen and (min-width: 1440px) {
-    gap: 36px;
+  gap: 48px;
+  padding: 0 16px;
+
+  @media (min-width: 1440px) {
+    gap: 56px;
+    padding: 0 72px;
   }
 }
 
+.lab_content {
+  max-width: 343px;
+
+  @media (min-width: 1440px) {
+    max-width: 100%;
+  }
+}
+
+.swiper-wrapper-lab {
+  @media (min-width: 1440px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
+.swiper-slide-lab {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 11px;
+  border: 1px solid #ed6722;
+  padding: 16px;
+  min-height: 142px;
+
+  @media (min-width: 1440px) {
+    gap: 16px;
+    width: 416px;
+    max-width: 416px;
+    min-height: 166px;
+    height: 166px;
+  }
+}
+
+.lab-svg-box {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px; 
+  @media (min-width: 1440px) {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+}
+
+.slide-lab-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 110px;
+  @media screen {
+    height: 134px;
+  }
+}
+
+.slide-lab-content h3{
+  font-weight: 500;
+  font-size: 18px;
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+  }
+}
+
+.slide-lab-content p{
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
+}
+
+
+.swiper-pagination-lab {
+  display: flex !important;
+  justify-content: center;
+  position: relative !important;
+  margin-top: 32px;
+
+  @media screen and (min-width: 1440px) {
+    display: none !important;
+  }
+}
+
+
+.swiper-pagination-lab-bullet {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50%;
+  background-color: #F4A261 !important;
+}
