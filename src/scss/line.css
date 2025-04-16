@@ -2,7 +2,7 @@
   margin-bottom: 80px;
   scroll-margin-top: 100px;
   @media (min-width: 1440px) {
-    margin-bottom: 140px;
+    margin-bottom: 120px;
   }
 }
 
@@ -10,9 +10,104 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 28px;
+  gap: 48px;
+  padding: 0 16px;
   @media (min-width: 1440px) {
-    gap: 36px;
+    gap: 56px;
+    padding: 0 72px;
   }
 }
 
+.line_content{
+  max-width: 343px;
+  @media (min-width: 1440px) {
+    max-width: 100%;
+  }
+}
+
+.swiper-wrapper-line{
+  @media (min-width: 1440px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
+.swiper-slide-line{
+  overflow: hidden;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  padding: 16px;
+  min-height: 148px;
+  @media (min-width: 1440px) {
+    gap: 16px;
+    padding: 24px;
+    width: 416px;
+    max-width: 416px;
+    min-height: 220px;
+    height: 220px;
+  }
+}
+
+.swiper-slide-line > h3{
+  font-weight: 500;
+  font-size: 24px;
+  @media (min-width: 1440px) {
+    font-size: 32px;
+  }
+}
+
+.swiper-slide-line > p{
+  font-weight: 500;
+  max-width: 311px;
+  @media (min-width: 1440px) {
+    font-size: 24px;
+    max-width: 368px;
+  }
+}
+
+.swiper-slide-line-1{
+  background-image: url(../img/line/line-card-bg1.png);
+}
+
+.swiper-slide-line-2{
+  background-image: url(../img/line/line-card-bg2.png);
+}
+
+.swiper-slide-line-3{
+  background-image: url(../img/line/line-card-bg3.png);
+}
+
+.swiper-slide-line-4{
+  background-image: url(../img/line/line-card-bg4.png);
+}
+
+.swiper-slide-line-5{
+  background-image: url(../img/line/line-card-bg5.png);
+}
+
+.swiper-pagination-line {
+  display: flex !important;
+  justify-content: center;
+  position: relative !important;
+  margin-top: 32px;
+  @media screen and (min-width: 1440px) {
+    display: none !important;
+  }
+}
+
+
+.swiper-pagination-bullet{
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50%;
+  background-color: #F4A261 !important;
+}
